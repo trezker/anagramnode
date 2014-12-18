@@ -1,0 +1,29 @@
+doctype html
+html
+	head
+		title Anagram online
+		link(rel='stylesheet', href='style.css', type='text/css')
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
+		script(src="/socket.io/socket.io.js")
+		script(src="script.js")
+	body
+		div.container
+			header
+				h1 Anagram online
+			div
+				span Unscramble: 
+				span#scrambledword
+			div
+				span Time: 
+				span#timeleft
+			div#chatEntries
+			div#chatControls
+				input(type='text')#messageInput
+				button#submit Send
+			div#login
+				span Username: 
+				input(type='text')#usernameInput
+				button#usernameSet Join
+			div
+				h3 Highscore
+				table#highscore
